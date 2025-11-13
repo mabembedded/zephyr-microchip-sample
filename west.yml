@@ -1,0 +1,12 @@
+manifest:
+  remotes:
+    - name: microchip
+      url-base: https://github.com/Zephyr4Microchip
+
+  projects:
+    - name: zephyr
+      path: zephyr
+      remote: microchip
+      revision: mchp_zph_v420
+      import:
+        true
