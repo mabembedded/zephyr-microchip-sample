@@ -4,9 +4,15 @@ manifest:
       url-base: https://github.com/Zephyr4Microchip
 
   projects:
+    - name: hal_microchip
+      path: modules/hal/microchip
+      remote: microchip
+      revision: hal_add_sam_d5x_e5x_dfp
+
     - name: zephyr
       path: zephyr
       remote: microchip
       revision: mchp_zph_v420
       import:
-        true
+        name-blacklist:
+          - hal_microchip
